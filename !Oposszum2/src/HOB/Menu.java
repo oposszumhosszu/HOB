@@ -7,9 +7,11 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
 public class Menu {
-    public static Rectangle playButton = new Rectangle(10, 50, 100, 37);
-    public static Rectangle helpButton = new Rectangle(10, 102, 100, 37);
-    public static Rectangle quitButton = new Rectangle(10, 154, 100, 37);
+    public static Rectangle playButton = new Rectangle(10, 50, 180, 37);
+    public static Rectangle customizeButton = new Rectangle(10, 102, 180, 37);
+    public static Rectangle optionsButton = new Rectangle(10, 154, 180, 37);
+    public static Rectangle helpButton = new Rectangle(10, 204, 180, 37);
+    public static Rectangle quitButton = new Rectangle(10, 254, 180, 37);
 
     public static void render(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
@@ -19,11 +21,15 @@ public class Menu {
         Font fnt2 = new Font("arial", Font.BOLD, 15);
         g.setFont(fnt0);
         g.setColor(Color.white);
-        g.drawString("Hosszú Oposszum Bosszúja", 10, 40);
+        g.drawString("HosszÃº Oposszum BosszÃºja", 10, 40);
 
         g.setFont(fnt1);
         g.drawString("Play", playButton.x + 19, playButton.y + 29);
             g2d.draw(playButton);
+        g.drawString("Customize", customizeButton.x + 19, customizeButton.y + 29);
+            g2d.draw(customizeButton);
+        g.drawString("Options", optionsButton.x + 19, optionsButton.y + 29);
+            g2d.draw(optionsButton);
         g.drawString("Help", helpButton.x + 19, helpButton.y + 29);
             g2d.draw(helpButton);
         g.drawString("Quit", quitButton.x + 19, quitButton.y + 29);
