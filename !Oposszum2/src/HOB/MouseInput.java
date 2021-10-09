@@ -14,9 +14,15 @@ public class MouseInput implements MouseListener{
                 Board.State = Board.STATE.GAME;
             }
             if(my>=102 && my<=139) {
+                //CUSTOMIZE
+            }
+            if(my>=154 && my<=203) {
+                //OPTIONS
+            }
+            if(my>=204 && my<=253) {
                 //HELP
             }
-            if(my>=154 && my<=191) {
+            if(my>=254 && my<=300) {
                 System.exit(1);
             }
         }
