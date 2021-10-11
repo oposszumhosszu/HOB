@@ -10,7 +10,7 @@ public class Frame {                                                            
                 frame.setSize(700,700);                                                              //frame meretenek beallitasa a hatterhez
                 frame.setResizable(false);                                                           //a felhasznalo igy nem valtoztathatja meg
                 frame.setLocation(150, 100);                                                           //pozicio beallitas
-                frame.setVisible(true);                                                              //lathato legyen
+                frame.setVisible(true);                                                              //megjelenik a kepernyon
 
                 int frameWidth  = frame.getContentPane().getWidth();
                 int frameHeight  = frame.getContentPane().getHeight();
